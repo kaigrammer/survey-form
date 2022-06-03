@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap" rel="stylesheet">  
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the platform
+        </p>
+        <div class="container">
+            <form id="survey-form">
+                <label id="name-label">Name:</label>
+                <input type="text" placeholder="Enter your name" id="name" required/>
+                <label id="email-label">Email:</label>
+                <input type="email" placeholder="Enter your email" id="email" required />
+                <label id="number-label">Enter a number (1 to 5):</label>
+                <input type="number" placeholder="Enter a number" id="number" min="1" max="5" />
+                <label id="favourite-vehicle-label">What's your favourite vehicle?</label>
+                <select id="dropdown">
+                    <option>Car</option>
+                    <option>Motorcycle</option>
+                </select>
+                <p id="recommend-text">Would you recommend freeCodeCamp to a friend?</p>
+                <label for="definitely" id="definitely-label">
+                    <input type="radio" id="definitely" name="user-recommend" value="definitely"/> Definitely
+                </label>
+                <label for="maybe" id="maybe-label">
+                    <input type="radio" id="maybe" name="user-recommend" value="maybe"/> Maybe
+                </label>
+                <label for="not-sure" id="not-sure-label">
+                    <input type="radio" id="not-sure" name="user-recommend" value="not sure"/> Not Sure
+                </label>
+                <p id="improvement-text">What would you like to see improved?</p>
+                <label for="frontend" id="frontend-label">
+                    <input type="checkbox" id="frontend" value="frontend"> Front end
+                </label>
+                <label for="backend" id="backend-label">
+                    <input type="checkbox" id="backend" value="backend"> Back end
+                </label>
+                <label id="suggestion-label">Any comments or suggestions?</label>
+                <textarea id="suggestion" placeholder="Enter your comments here..."></textarea>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
